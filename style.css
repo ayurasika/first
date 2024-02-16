@@ -1,0 +1,99 @@
+/* ヘッダー透過 */
+.l-header {
+  /* background-color: rgb(42 49 133 / 44%);
+  position: absolute; */
+}
+
+/* ヘッダーインナー */
+.l-header__inner.l-container {
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+  /* 	max-width: 1080px; */
+}
+
+/* ヘッダー電話番号間隔調整 */
+p.header-tel-txt {
+  margin: -15px 0;
+}
+
+p.header-tel.has-white-color.has-text-color.has-link-color.wp-elements-417b312eaaa790be4c437c0d120289cb {
+  margin-bottom: -20px;
+}
+
+/* ヘッダーTEL・ボタン横並び */
+.textwidget.custom-html-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ヘッダーボタン中央揃え */
+.swell-block-button.-size-s.is-style-btn_shiny.pc_only.u-mb-ctrl.u-mb-0 {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  /* 	margin-right:30px; */
+}
+
+/* ロゴの横にTel・お問い合わせを横並びに */
+.-parallel .l-header__logo {
+  width: 30%;
+}
+.l-header.-parallel .w-header {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* グローバルナビ間隔調整 */
+.-parallel .l-header__gnav .c-gnav > li > a {
+  padding: 20px 80px 20px;
+}
+
+/* メインビジュアルタイトルがヘッダーにかからないように調整 */
+.p-mainVisual__slideTitle {
+  padding-top: 150px;
+}
+
+/* section01 */
+img.wp-image-2476.luminous.lazyloaded {
+  min-width: 280px;
+}
+
+/* section02 */
+.post_content
+  h3:where(
+    :not([class^="swell-block-"]):not(.faq_q):not(.p-postList__title)
+  )::before {
+  display: none;
+}
+
+.wp-block-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.wp-block-columns.is-not-stacked-on-mobile.u-mb-ctrl.u-mb-0.has-background {
+  display: flex;
+}
+
+.wp-block-columns.is-not-stacked-on-mobile.u-mb-ctrl.u-mb-0.sp_column2.has-white-background-color.has-background {
+  padding: 0;
+}
+
+/*タブレット時の見た目*/
+@media screen and (max-width: 959px) {
+  /* ここにセレクタを指定する */
+  .text-nowrap {
+    white-space: normal;
+  }
+
+  .wp-block-column.plan {
+    padding: 0;
+  }
+}
+/*スマホ時の見た目*/
+@media screen and (max-width: 599px) {
+  /* ここにセレクタを指定する */
+}
